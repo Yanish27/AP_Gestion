@@ -21,7 +21,19 @@
             <RowDefinition Height="80*"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Grid Grid.Column="1" Grid.Row="5">
+        <Grid Grid.Row="1" Grid.Column="1" >
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Content="Nom d'utilisateur" Foreground="Black"></Label>
+            <TextBox Grid.Row="2" Name="Username"></TextBox>
+        </Grid>
+        
+        
+        <Grid Grid.Column="1" Grid.Row="5"> 
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="129*"/>
                 <ColumnDefinition Width="16*"/>
@@ -38,7 +50,7 @@
             </Grid.RowDefinitions>
             <Button Grid.Row="0" Name="BTN_Connexion" Background="green" Content="Connexion" Foreground="White" Grid.ColumnSpan="2"></Button>
             <Button Grid.Row="2" Name="BTN_Configuration" Background="Gray" Content="Configuration" Foreground="White" Grid.ColumnSpan="2"></Button>
-
         </Grid>
+        
     </Grid>
 </UserControl>
