@@ -5,9 +5,40 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:AP_Gestion_HALAOUI.View"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="blue">
-        
-            
+             d:DesignHeight="450" AutomationProperties.Name="Login" Width="217">
+    <Grid Background="White" Margin="0,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="20*">
+            </ColumnDefinition>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="110"></RowDefinition>
+            <RowDefinition Height="110"></RowDefinition>
+            <RowDefinition Height="80*"></RowDefinition>
+            <RowDefinition Height="80*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Column="1" Grid.Row="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="129*"/>
+                <ColumnDefinition Width="16*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition>
+                    <!-- BTN CONNEXION -->
+                </RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition>
+                    <!-- BTN CONFIGURATION -->
+                </RowDefinition>
+            </Grid.RowDefinitions>
+            <Button Grid.Row="0" Name="BTN_Connexion" Background="green" Content="Connexion" Foreground="White" Grid.ColumnSpan="2"></Button>
+            <Button Grid.Row="2" Name="BTN_Configuration" Background="Gray" Content="Configuration" Foreground="White" Grid.ColumnSpan="2"></Button>
+
+        </Grid>
     </Grid>
 </UserControl>
