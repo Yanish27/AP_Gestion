@@ -10,6 +10,6 @@ namespace AP_Gestion_HALAOUI.BDD
         public int Id { get; set; }
         public string Email { get; set; }
         public string Motdepasse { get; set; }
-        public DateTime DateInscription { get; set; }
+        public int Grade { get; set; }
     }
 }

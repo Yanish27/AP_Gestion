@@ -195,9 +195,9 @@ namespace AP_Gestion_HALAOUI.BDD
 
                 entity.Property(e => e.Id).HasColumnName("id");
 
-                entity.Property(e => e.DateInscription)
-                    .HasColumnType("date")
-                    .HasColumnName("date_inscription");
+                entity.Property(e => e.Grade)
+                    .HasColumnType("int")
+                    .HasColumnName("grade");
 
                 entity.Property(e => e.Email)
                     .IsRequired()
